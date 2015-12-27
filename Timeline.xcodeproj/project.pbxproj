@@ -14,6 +14,8 @@
 		F8DC1C541C30AB00008920A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DC1C521C30AB00008920A9 /* LaunchScreen.storyboard */; };
 		F8DC1C5F1C30AB00008920A9 /* TimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C5E1C30AB00008920A9 /* TimelineTests.swift */; };
 		F8DC1C6A1C30AB00008920A9 /* TimelineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C691C30AB00008920A9 /* TimelineUITests.swift */; };
+		F8DC1C7B1C30ABD6008920A9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C7A1C30ABD6008920A9 /* ImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F8DC1C7D1C30ADD5008920A9 /* images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC1C7C1C30ADD5008920A9 /* images.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F8DC1C651C30AB00008920A9 /* TimelineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DC1C691C30AB00008920A9 /* TimelineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineUITests.swift; sourceTree = "<group>"; };
 		F8DC1C6B1C30AB00008920A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DC1C7A1C30ABD6008920A9 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../ImageViewController.swift; sourceTree = "<group>"; };
+		F8DC1C7C1C30ADD5008920A9 /* images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		F8DC1C481C30AB00008920A9 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				F8DC1C491C30AB00008920A9 /* AppDelegate.swift */,
+				F8DC1C7A1C30ABD6008920A9 /* ImageViewController.swift */,
+				F8DC1C7C1C30ADD5008920A9 /* images.swift */,
 				F8DC1C4B1C30AB00008920A9 /* ViewController.swift */,
 				F8DC1C4D1C30AB00008920A9 /* Main.storyboard */,
-				F8DC1C501C30AB00008920A9 /* Assets.xcassets */,
-				F8DC1C521C30AB00008920A9 /* LaunchScreen.storyboard */,
-				F8DC1C551C30AB00008920A9 /* Info.plist */,
+				F8DC1C771C30AB35008920A9 /* Supporting Files */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -123,6 +126,17 @@
 				F8DC1C6B1C30AB00008920A9 /* Info.plist */,
 			);
 			path = TimelineUITests;
+			sourceTree = "<group>";
+		};
+		F8DC1C771C30AB35008920A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8DC1C491C30AB00008920A9 /* AppDelegate.swift */,
+				F8DC1C501C30AB00008920A9 /* Assets.xcassets */,
+				F8DC1C551C30AB00008920A9 /* Info.plist */,
+				F8DC1C521C30AB00008920A9 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DC1C4C1C30AB00008920A9 /* ViewController.swift in Sources */,
+				F8DC1C7D1C30ADD5008920A9 /* images.swift in Sources */,
+				F8DC1C7B1C30ABD6008920A9 /* ImageViewController.swift in Sources */,
 				F8DC1C4A1C30AB00008920A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

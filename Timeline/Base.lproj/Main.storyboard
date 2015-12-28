@@ -119,11 +119,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="626"/>
                                 <animations/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="goC-cZ-lsC">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="goC-cZ-lsC" firstAttribute="centerX" secondItem="7wb-ck-yI7" secondAttribute="centerX" id="0jm-fm-TQL"/>
                             <constraint firstItem="7nW-6J-qUW" firstAttribute="top" secondItem="7wb-ck-yI7" secondAttribute="top" id="Yfk-y1-26y"/>
+                            <constraint firstItem="goC-cZ-lsC" firstAttribute="centerY" secondItem="7wb-ck-yI7" secondAttribute="centerY" id="dZQ-Wd-BOo"/>
                             <constraint firstAttribute="trailing" secondItem="7nW-6J-qUW" secondAttribute="trailing" id="iXW-0h-FEx"/>
                             <constraint firstAttribute="bottomMargin" secondItem="7nW-6J-qUW" secondAttribute="bottom" constant="-26" id="j17-Dw-cr1"/>
                             <constraint firstItem="7nW-6J-qUW" firstAttribute="leading" secondItem="7wb-ck-yI7" secondAttribute="leading" id="wI5-WR-0rz"/>
@@ -131,6 +137,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="7wb-ck-yI7" id="qNo-ba-s3g"/>
+                        <outlet property="spinner" destination="goC-cZ-lsC" id="MaX-AB-ldO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSW-mi-7p6" userLabel="First Responder" sceneMemberID="firstResponder"/>

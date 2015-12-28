@@ -25,6 +25,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Seattle, Washington"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Seattle" id="N1J-Zg-t5E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEC-X7-Hdk">
                                 <rect key="frame" x="222" y="266" width="157" height="30"/>
@@ -34,6 +37,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Hillsboro, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Hillsboro" id="4cG-Ui-agu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFt-bm-yrJ">
                                 <rect key="frame" x="208" y="304" width="184" height="30"/>
@@ -44,12 +50,18 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Columbus, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Columbus" id="Dmb-bO-CGn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr8-Z7-60T">
                                 <rect key="frame" x="208" y="342" width="184" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Cincinnati, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Cincinnati" id="KK5-XZ-WNq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -72,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-170"/>
+            <point key="canvasLocation" x="1800" y="-1186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="peH-es-goQ">
@@ -89,7 +101,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="618" y="-133"/>
+            <point key="canvasLocation" x="666" y="-1186"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="eg7-Vx-9ot">
@@ -102,7 +114,7 @@
                     </connections>
                 </splitViewController>
             </objects>
-            <point key="canvasLocation" x="-406" y="84"/>
+            <point key="canvasLocation" x="-526" y="-1186"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="4M3-ka-CL0">
@@ -121,7 +133,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSW-mi-7p6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776" y="824"/>
+            <point key="canvasLocation" x="720" y="-23"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HGd-zS-fOj"/>
+    </inferredMetricsTieBreakers>
 </document>

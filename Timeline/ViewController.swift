@@ -10,16 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // Set up segue between buttons to URL images
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let ivc = segue.destinationViewController as? ImageViewController {
+            if let identifier = segue.identifier {
+                switch identifier {
+                case "Seattle, Washington" :
+                    ivc.imageURL = LocationImages.Seattle
+                    ivc.title = "Seattle, Washington"
+                case "Hillsboro, Ohio":
+                    ivc.imageURL = LocationImages.Ohio.Hillsboro
+                    ivc.title = "Hillsboro, Ohio"
+                case "Columbus, Ohio":
+                    ivc.imageURL = LocationImages.Ohio.Columbus
+                    ivc.title = "Columbus, Ohio"
+                case "Cincinnati, Ohio":
+                    ivc.imageURL = LocationImages.Ohio.Cincinnati
+                    ivc.title = "Cincinnati, Ohio"
+                default: break
+                }
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

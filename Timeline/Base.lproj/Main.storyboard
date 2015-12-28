@@ -16,68 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-IJ-w35">
-                                <rect key="frame" x="193" y="228" width="215" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csg-iU-Otn">
+                                <rect key="frame" x="193" y="231" width="214" height="41"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="6PX-ip-S4M"/>
-                                    <constraint firstAttribute="height" constant="30" id="b9V-7l-fKy"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Seattle, Washington"/>
-                                <connections>
-                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Seattle" id="N1J-Zg-t5E"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEC-X7-Hdk">
-                                <rect key="frame" x="222" y="266" width="157" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="rG0-ER-ykp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Hillsboro, Ohio"/>
-                                <connections>
-                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Hillsboro" id="4cG-Ui-agu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFt-bm-yrJ">
-                                <rect key="frame" x="208" y="304" width="184" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="184" id="JIN-1m-tS6"/>
-                                    <constraint firstAttribute="height" constant="30" id="cEJ-ig-Uwq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Columbus, Ohio"/>
-                                <connections>
-                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Columbus" id="Dmb-bO-CGn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr8-Z7-60T">
-                                <rect key="frame" x="208" y="342" width="184" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-cE-3Pv">
+                                <rect key="frame" x="215" y="378" width="170" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Cincinnati, Ohio"/>
-                                <connections>
-                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Cincinnati" id="KK5-XZ-WNq"/>
-                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-Yv-0gO">
+                                <rect key="frame" x="214" y="329" width="172" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Columbus, Ohio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFP-IN-PBf">
+                                <rect key="frame" x="222" y="280" width="157" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Hillsboro, Ohio"/>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tr8-Z7-60T" firstAttribute="trailing" secondItem="wFt-bm-yrJ" secondAttribute="trailing" id="0Ry-cq-TR9"/>
-                            <constraint firstItem="tr8-Z7-60T" firstAttribute="centerX" secondItem="wFt-bm-yrJ" secondAttribute="centerX" id="5mq-Rs-BWg"/>
-                            <constraint firstItem="dEC-X7-Hdk" firstAttribute="top" secondItem="qEV-IJ-w35" secondAttribute="bottom" constant="8" symbolic="YES" id="6RF-01-VVG"/>
-                            <constraint firstItem="wFt-bm-yrJ" firstAttribute="centerX" secondItem="dEC-X7-Hdk" secondAttribute="centerX" id="9EQ-xH-g7F"/>
-                            <constraint firstItem="qEV-IJ-w35" firstAttribute="centerX" secondItem="dEC-X7-Hdk" secondAttribute="centerX" id="DKM-OO-pu5"/>
-                            <constraint firstItem="wFt-bm-yrJ" firstAttribute="top" secondItem="dEC-X7-Hdk" secondAttribute="bottom" constant="8" symbolic="YES" id="Jkn-Cd-MBB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tr8-Z7-60T" secondAttribute="bottom" constant="228" id="LDy-tx-JYw"/>
-                            <constraint firstItem="tr8-Z7-60T" firstAttribute="leading" secondItem="wFt-bm-yrJ" secondAttribute="leading" id="NUw-s6-5or"/>
-                            <constraint firstItem="qEV-IJ-w35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctq-cb-scR"/>
-                            <constraint firstItem="qEV-IJ-w35" firstAttribute="centerX" secondItem="dEC-X7-Hdk" secondAttribute="centerX" id="yEc-7d-RUw"/>
-                            <constraint firstItem="tr8-Z7-60T" firstAttribute="top" secondItem="wFt-bm-yrJ" secondAttribute="bottom" constant="8" symbolic="YES" id="zpA-pR-s9g"/>
+                            <constraint firstItem="PBZ-Yv-0gO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DqQ-h4-NN7"/>
+                            <constraint firstItem="yFP-IN-PBf" firstAttribute="top" secondItem="csg-iU-Otn" secondAttribute="bottom" constant="8" id="LjE-J5-rYz"/>
+                            <constraint firstItem="PBZ-Yv-0gO" firstAttribute="top" secondItem="yFP-IN-PBf" secondAttribute="bottom" constant="8" symbolic="YES" id="c4Z-QC-KIu"/>
+                            <constraint firstItem="i3C-cE-3Pv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAq-jN-nUe"/>
+                            <constraint firstItem="yFP-IN-PBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ufY-zu-g0u"/>
+                            <constraint firstItem="csg-iU-Otn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w6Q-GT-iIq"/>
+                            <constraint firstItem="i3C-cE-3Pv" firstAttribute="top" secondItem="PBZ-Yv-0gO" secondAttribute="bottom" constant="8" id="zal-JN-yH2"/>
+                            <constraint firstItem="yFP-IN-PBf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zzI-1i-wDY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rk6-C9-Mwz"/>
@@ -136,7 +110,4 @@
             <point key="canvasLocation" x="720" y="-23"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HGd-zS-fOj"/>
-    </inferredMetricsTieBreakers>
 </document>

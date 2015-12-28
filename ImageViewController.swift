@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController
+class ImageViewController: UIViewController, UIScrollViewDelegate
 {
     
     // get image URL making sure it's not nil
@@ -21,6 +21,7 @@ class ImageViewController: UIViewController
         }
     }
     
+    // get image URL
     private func getImage() {
         if let url = imageURL {
             let imageData = NSData(contentsOfURL: url)
@@ -32,26 +33,39 @@ class ImageViewController: UIViewController
         }
     }
     
+    // Update size of image to frame of  picture
+    @IBOutlet var scrollView: UIScrollView! {
+        didSet {
+            scrollView.contentSize = imageView.frame.size
+            scrollView.delegate = self
+            scrollView.minimumZoomScale = 0.03
+            scrollView.maximumZoomScale = 1.0
+        }
+    }
+    
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+
+    
     private var imageView = UIImageView()
     
+    // Get image and size accordingly
     private var image: UIImage? {
         get { return imageView.image }
         set {
             imageView.image = newValue
             imageView.sizeToFit()
-            
+            scrollView?.contentSize = imageView.frame.size
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(imageView)
-        if image == nil {
-            imageURL = LocationImages.Seattle
-            
-        }
+        scrollView.addSubview(imageView)
     }
     
+    // Set up image
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         if image == nil {

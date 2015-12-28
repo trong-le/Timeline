@@ -1,5 +1,5 @@
 //
-//  images.swift
+//  LocationImages.swift
 //  Timeline
 //
 //  Created by Trong Le on 12/27/15.
@@ -15,5 +15,5 @@ struct LocationImages {
         static let Columbus = NSURL(string: "http://wilsonresourcesinc.com/wp-content/uploads/2013/04/columbus.jpg")
         static let Cincinnati = NSURL(string: "http://www.proalertsecuritysystems.com/images/cincinnati2.jpg")
     }
-
+    
 }

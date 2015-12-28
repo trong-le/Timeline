@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AV0-bF-XT4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,24 +22,36 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Seattle, Washington"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-cE-3Pv">
-                                <rect key="frame" x="215" y="378" width="170" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Cincinnati, Ohio"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-Yv-0gO">
-                                <rect key="frame" x="214" y="329" width="172" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Columbus, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Seattle" id="E3M-ea-hcO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFP-IN-PBf">
                                 <rect key="frame" x="222" y="280" width="157" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Hillsboro, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Hillsboro" id="Db8-eH-QE6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-cE-3Pv">
+                                <rect key="frame" x="215" y="378" width="170" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cincinnati, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Cincinnati" id="xtT-O2-tkk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-Yv-0gO">
+                                <rect key="frame" x="214" y="329" width="172" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Columbus, Ohio"/>
+                                <connections>
+                                    <segue destination="Lkx-de-63v" kind="showDetail" identifier="Columbus" id="ZdV-2p-jfI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -71,7 +84,7 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wjz-tn-ktW"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dvO-IK-arG"/>
                     </connections>
                 </navigationController>
             </objects>
@@ -84,7 +97,7 @@
                 <splitViewController id="AV0-bF-XT4" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ZUZ-No-em6" kind="relationship" relationship="masterViewController" id="fAM-oM-SnW"/>
-                        <segue destination="Lkx-de-63v" kind="relationship" relationship="detailViewController" id="HGd-zS-fOj"/>
+                        <segue destination="Lkx-de-63v" kind="relationship" relationship="detailViewController" id="PV5-rf-nu8"/>
                     </connections>
                 </splitViewController>
             </objects>
@@ -101,13 +114,31 @@
                     <view key="view" contentMode="scaleToFill" id="7wb-ck-yI7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nW-6J-qUW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="626"/>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7nW-6J-qUW" firstAttribute="top" secondItem="7wb-ck-yI7" secondAttribute="top" id="Yfk-y1-26y"/>
+                            <constraint firstAttribute="trailing" secondItem="7nW-6J-qUW" secondAttribute="trailing" id="iXW-0h-FEx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7nW-6J-qUW" secondAttribute="bottom" constant="-26" id="j17-Dw-cr1"/>
+                            <constraint firstItem="7nW-6J-qUW" firstAttribute="leading" secondItem="7wb-ck-yI7" secondAttribute="leading" id="wI5-WR-0rz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="7wb-ck-yI7" id="qNo-ba-s3g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSW-mi-7p6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720" y="-23"/>
+            <point key="canvasLocation" x="695" y="-425"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xtT-O2-tkk"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -15,16 +15,16 @@ class ViewController: UIViewController {
         if let ivc = segue.destinationViewController as? ImageViewController {
             if let identifier = segue.identifier {
                 switch identifier {
-                case "Seattle, Washington" :
+                case "Seattle" :
                     ivc.imageURL = LocationImages.Seattle
                     ivc.title = "Seattle, Washington"
-                case "Hillsboro, Ohio":
+                case "Hillsboro":
                     ivc.imageURL = LocationImages.Ohio.Hillsboro
                     ivc.title = "Hillsboro, Ohio"
-                case "Columbus, Ohio":
+                case "Columbus":
                     ivc.imageURL = LocationImages.Ohio.Columbus
                     ivc.title = "Columbus, Ohio"
-                case "Cincinnati, Ohio":
+                case "Cincinnati":
                     ivc.imageURL = LocationImages.Ohio.Cincinnati
                     ivc.title = "Cincinnati, Ohio"
                 default: break
